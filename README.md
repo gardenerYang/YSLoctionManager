@@ -3,8 +3,10 @@
 
 # 回调获取YSLocationManagerModel模型
 
- ```objecttive-c  [[YSLocationManager sharedManager] getLocationDidFinishBlock:^(YSLocationManagerModel *model) {
+ ```objecttive-c 
+ [[YSLocationManager sharedManager] getLocationDidFinishBlock:^(YSLocationManagerModel *model) {
         NSLog(@"%f----%@",model.latitude,model.name);
     } errorBolck:^(NSError *error) {
         
-    }];```
+    }];
+    ```
